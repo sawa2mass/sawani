@@ -1,0 +1,1056 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 20px;
+  background-color: #F4F4F4;
+  text-align: justify;
+}
+
+/*ヘッダー*/
+
+/*台南ロゴ(モバイル非表示、PC表示)*/
+.mainLogo{  
+  display: none;
+}
+
+.mainLogoPc{
+  display: block;
+  position: absolute;
+  top: 94px;
+  left: 23%;
+}
+
+/*ヘッダー全体*/
+header {
+  background: url(../images/pcTainanHero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 768px;
+  color: #FFF;
+}
+.headerWrap{
+  position: relative;
+  max-width: 100%;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*ヘッダー右下テキスト*/
+.headerWrap p {
+  position: absolute;
+  display: inline-block;
+  width: 467px;
+  font-weight: bold;
+  line-height: 1.6em;
+  text-align: justify;
+  right: 20px;
+  bottom: 20px;
+}
+
+
+/*ボディ*/
+
+.main {
+  padding: 0 20px;
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* パンくずリスト */
+.pan{
+  display: flex;
+  max-width: 100%;
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.pan p{
+  padding: 20px 0 20px 20px;
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.borderPan {
+    display: block;
+    width: 100%;
+    border-top: 1px #000 solid;
+}
+
+/*セクション1*/
+
+.main .section1 > h2 {
+    display: flex;
+    background-image: url(../images/midashiPC.png);
+    background-position: left center;  /* 背景画像を左寄せ */
+    background-repeat: no-repeat;
+    font-size: 48px;
+    text-align: center;
+    justify-content: center;  /* テキストは中央寄せ */
+    align-items: flex-end;
+    height: 96px;
+    width: 530px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding-bottom: 24px;
+}
+h2 span{
+    font-size: 24px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.section1 {
+  max-width: 1160px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+h3{
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px; 
+  letter-spacing: 0.3em;
+}
+
+.section1 > .border {
+    display: block;
+    width: 480px;
+    border-top: 1px #000 solid;
+    margin: 80px auto;
+}
+
+/*グリッドレイアウト(s1Gr01)*/
+.s1Gr01 {
+  display: grid;
+  grid-template-columns: 27% 30% 43%;
+  grid-template-rows: auto auto;
+  row-gap: 40px;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.s1Gr01 img {
+  width: 100%;     /* セル幅いっぱいに広げる */
+  height: auto;    /* アスペクト比維持 */
+  display: block;  /* 余白をなくす */
+  max-width: 100%; /* 親をはみ出さない */
+}
+
+.tainanS1Img01 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  padding-right: 60px;
+}
+
+.tainanS1Txt01 {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  background-color: rgba(100, 201, 155, 0.2);
+  line-height: 1.6em;
+  padding: 40px;
+}
+
+.tainanS1Img02 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  padding-right: 20px;
+}
+
+.tainanS1Img03 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  padding-right: 60px;
+}
+
+.tainanS1Txt02 {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  background-color: rgba(100, 201, 155, 0.2);
+  line-height: 1.6em;
+  padding: 40px;
+  height: 160px;
+}
+
+
+/*グリッドレイアウト(s1Gr02)*/
+.s1Gr02 {
+  display: grid;
+  grid-template-columns: 27% 30% 43%;
+  grid-template-rows: auto auto;
+  row-gap: 40px;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.s1Gr02 img {
+  width: 100%;     /* セル幅いっぱいに広げる */
+  height: auto;    /* アスペクト比維持 */
+  display: block;  /* 余白をなくす */
+  max-width: 100%; /* 親をはみ出さない */
+}
+
+
+.tainanS1Img04 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  padding-right: 60px;
+}
+
+.tainanS1Txt03 {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  background-color: rgba(100, 201, 155, 0.2);
+  line-height: 1.6em;
+  padding: 40px;
+}
+
+.tainanS1Img05 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  padding-right: 20px;
+}
+
+.tainanS1Img06 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  padding-right: 60px;
+}
+
+.tainanS1Txt04 {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  background-color: rgba(100, 201, 155, 0.2);
+  line-height: 1.6em;
+  padding: 40px;
+  text-align: center;
+  line-height: 2.3;
+  height: 160px;
+}
+.tainanS1Txt04 span {
+  font-weight: bold;
+
+}
+
+/*セクション2*/
+.main .section2 > h2 {
+    display: flex;
+    background-image: url(../images/midashiPC.png);
+    background-position: right center;  /* 背景画像を右寄せ */
+    background-repeat: no-repeat;
+    font-size: 48px;
+    text-align: center;
+    justify-content: center;  /* テキストは中央寄せ */
+    align-items: flex-end;
+    height: 96px;
+    width: 530px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: auto;  /*要素自体を右側に寄せる */
+    margin-right: 20px;
+    padding-bottom: 24px;
+}
+
+.section2 > .s2Con > div > .border {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    border-top: 1px #000 solid;
+    margin: 80px auto;
+    margin-left: 0;
+}
+.section2 > .s2Con > div > p {
+  width: 100%;
+  max-width: 420px;
+}
+
+.borderS2Con01 {
+    display: block;
+    width: 100%;
+    max-width: 510px;
+    border-top: 1px #000 solid;
+    margin: 0;
+}
+
+/*グリッドレイアウト(s2Gr01)*/
+.s2Gr01 {
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  list-style: none;
+  gap: 60px;
+  padding: 0;
+  margin-bottom: 80px;
+  box-sizing: border-box;
+  max-width: 100%;  /* コンテナ内で縮むように */
+}
+
+.s2Gr01 img {
+  width: 100%;     /* セル幅いっぱいに広げる */
+  height: auto;    /* アスペクト比維持 */
+  display: block;  /* 余白をなくす */
+  max-width: 100%; /* 親をはみ出さない */
+}
+
+
+.tainanS2Con01 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+.tainanS2Con02 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+.tainanS2Con03 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+.tainanS2Con04 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.s2Link01, .s2Link02, .s2Link03, .s2Link04 {
+  margin-bottom: 38px;
+}
+
+.linkUnderline a {
+  position: relative;
+  text-decoration: none;
+}
+
+.linkUnderline a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: width 0.3s ease;
+}
+
+.linkUnderline a:hover::after {
+  width: 100%;
+}
+
+h4 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+h4 span {
+    font-size: 24px;
+}
+
+.s2Text {
+  line-height: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 38px;
+}
+.s2Con {
+  max-width: 1160px;
+  margin: 0 auto;        /* 中央寄せ */
+  box-sizing: border-box;
+}
+
+
+/*モーダル*/
+/* 背景のグレーアウト（黒50%） */
+.modal {
+  display: none;  /* 初期状態は非表示 */
+  position: fixed;  /* 画面に固定 */
+  z-index: 1000;
+  top: 0; left: 0;  /* 左上に配置 */
+  width: 100%; height: 100%;  /* 横幅高さいっぱいに広げる */
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* モーダル本体を上下左右中央に配置 */
+.modalContent {
+  position: absolute;  /* 親要素（.modal）の中で、自由に位置指定できるように */
+  top: 50%;  /* モーダル本体の左上の角を、画面の中央に置く */
+  left: 50%;
+  transform: translate(-50%, -50%);  /* モーダルの幅・高さの半分だけ左上にずらして、 モーダル全体の中心を画面の中央に*/
+  width: 675px;
+  height: 675px;
+  background-color: #F4F4F4;  /* モーダルの背景色 */
+  box-sizing: border-box;  /* paddingとborderを含めてwidthとheightを計算 */
+  display: flex;  /* モーダルの中身（画像など）を中央寄せするため */
+  align-items: center;  /* 縦方向に中央揃え */
+  justify-content: center;  /* 横方向に中央揃え */
+}
+
+/* 画像本体 */
+.modalContent img#modalImage {
+  width: 555px;
+  height: 555px;
+  object-fit: cover;  /* 画像サイズが違うものに備えて念の為 */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* 閉じるボタン（右上固定） */
+.modalContent .close {
+  position: absolute;  /* .modalContentを基準にして自由な位置に配置できるように */
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;  /* マウスオーバー時にカーソルをポインターにする */
+}
+/* モーダル表示中はクロール禁止 */
+/* 
+body.modalOpen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+*/
+
+/*セクション3*/
+
+.main .section3 >.s3Con > h2 {
+    display: flex;
+    background-image: url(../images/midashiPC.png);
+    background-position: left center;  /* 背景画像を左寄せ */
+    background-repeat: no-repeat;
+    font-size: 48px;
+    text-align: center;
+    justify-content: center;  /* テキストは中央寄せ */
+    align-items: center;
+    height: 96px;
+    width: 530px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.section3 > .s3Con > div > .border {
+    display: block;
+    width: 420px;
+    border-top: 1px #000 solid;
+    margin: 20px auto;
+    margin-left: 0;
+}
+
+.section3 > .s3Con > div > p {
+  width: 420px;
+  margin-bottom: 60px;
+  line-height: 1.5em;
+}
+
+.section3 .s3Con > div > h4 {
+  font-size: 36px;
+  margin: 0 0 20px 44px;
+}
+
+.s3Text {
+  margin-left: 60px;
+}
+
+/*グリッドレイアウト(s3Gr01)*/
+.s3Gr01 {
+  display: grid;
+  grid-template-columns: 58fr 42fr;
+  grid-template-rows: auto;
+  list-style: none;
+  gap: 60px;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+}
+
+.s3Gr01 img {
+  width: 100%;     /* セル幅いっぱいに広げる */
+  height: auto;    /* アスペクト比維持 */
+  display: block;  /* 余白をなくす */
+  max-width: 100%; /* 親をはみ出さない */
+}
+
+.tainanS3Img01 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+.tainanS3Txt01 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  line-height: 1.5em;
+  padding: 74px 0;
+}
+
+/*s3Gr02の設定*/
+.s3Gr02 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  gap: 60px;
+}
+.s3Gr02 > li {
+  flex: 1;            /* 均等に幅配分 */
+}
+.s3Gr02 img {
+  width: 100%;        /* コンテナ幅に合わせる */
+  height: auto;       /* アスペクト比維持 */
+  display: block;     /* 画像の下の余白防止 */
+}
+
+.tainanS3Txt02 {
+  margin: 80px auto;
+  text-align: center;
+}
+
+/*グリッドレイアウト(s3Gr03)*/
+.s3Gr03 {
+  display: grid;
+  grid-template-columns: 59fr 41fr;
+  grid-template-rows: 116px 209px;
+  list-style: none;
+  column-gap: 60px;
+  row-gap: 20px;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+}
+
+.s3Gr03 img {
+  width: 100%;     /* セル幅いっぱいに広げる */
+  height: auto;    /* アスペクト比維持 */
+  display: block;  /* 余白をなくす */
+  max-width: 100%; /* 親をはみ出さない */
+}
+
+.tainanS3Img04 {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+}
+.tainanS3Txt03 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  line-height: 1.7em;
+}
+.tainanS3Img05 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.s3Con > .border {
+  display: block;
+    width: 480px;
+    border-top: 1px #000 solid;
+    margin: 80px auto;
+}
+
+.s3Con {
+  max-width: 1160px;
+  margin: 0 auto;        /* 中央寄せ */
+  box-sizing: border-box;
+}
+
+/*768px以下レスポンシブデザインここから*/
+@media screen and (max-width: 768px) {
+  /* ヘッダー(レスポンシブ) */
+
+  /*台南ロゴ(モバイル表示、PC非表示)*/
+  .mainLogo{  
+    max-width: 100%;
+      display: inline;
+      position: absolute;
+      top: 120px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+  }
+
+  .mainLogoPc{
+    display: none;
+  }
+
+
+  /*ヘッダー全体*/
+  header {
+  background: url(../images/mTainanHero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 667px;
+  }
+
+  .headerWrap{
+    height: 667px;
+    color: #FFF;
+    text-align: center;
+  }
+
+  /*ヘッダー右下テキスト*/
+  .headerWrap p {
+    width: 247px;
+    font-size: 12px;
+    bottom: 8px;
+  }
+
+/*ボディ*/
+  .main {
+  padding: 0;
+  max-width: 100%;
+  width: 335px;
+  margin: 0 auto;
+  }
+
+/* パンくずリスト */
+  .pan{
+      width: 335px;
+    }
+  .pan p{
+    padding: 8px 0 8px 0px;
+    font-size: 16px;
+  }
+
+
+  /*セクション1*/
+  .main .section1 > h2 {
+      display: flex;
+      background-image: url(../images/frame.png);
+      background-position: center;  /* 背景画像を中央左寄せ */
+      background-repeat: no-repeat;
+      font-size: 24px;
+      text-align: center;
+      justify-content: center;  /* テキスト中央寄せ */
+      align-items: center;
+      height: 40px;
+      width: 220px;
+      margin: 20px auto 40px;
+      padding-bottom: 8px;
+  }
+  h2 span{
+      font-size: 12px;
+      padding-top: 10px;
+      padding-left: 3px;
+  }
+
+  .section1 {
+  width: 335px;
+  padding: 0 20px;
+  margin: 0 0;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; 
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+.section1 > .border {
+    display: block;
+    width: 223px;
+    border-top: 1px #000 solid;
+    margin: 40px auto;
+}
+
+  /*グリッドレイアウト(s1Gr01)*/
+.s1Gr01 {
+  display: grid;
+  grid-template-columns: 137.5px 137.5px;
+  grid-template-rows: 221px 170px 150px 54px;
+  list-style: none;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 0;
+}
+
+.s1Gr01 img {
+  width: auto;   /* 元の画像サイズのまま */
+  height: auto;
+  max-width: none;
+}
+
+.tainanS1Img01 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+}
+
+.tainanS1Txt01 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  background-color: rgba(100, 201, 155, 0.2);
+  line-height: 1.6em;
+  padding: 8px 36px;
+  font-size: 12px;
+}
+
+.tainanS1Img02 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.tainanS1Img03 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.tainanS1Txt02 {
+  grid-row: 4 / 5;
+  grid-column: 1 / 3;
+  background-color: rgba(100, 201, 155, 0.2);
+  line-height: 1.6em;
+  padding: 8px 32px;
+  font-size: 12px;
+  height: 54px;
+}
+
+/*グリッドレイアウト(s1Gr02)*/
+.s1Gr02 {
+  display: grid;
+  grid-template-rows: 221px 189px 150px 53px;
+  grid-template-columns: 137.5px 137.5px;
+  list-style: none;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 0;
+}
+
+.s1Gr02 img {
+  width: auto;   /* 元の画像サイズのまま */
+  height: auto;
+  max-width: none;
+}
+
+.tainanS1Img04 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+}
+
+.tainanS1Txt03 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  background-color: rgba(100, 201, 155, 0.2);
+  line-height: 1.6em;
+  padding: 8px 36px;
+  font-size: 12px;
+}
+
+.tainanS1Img05 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.tainanS1Img06 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.tainanS1Txt04 {
+  grid-row: 4 / 5;
+  grid-column: 1 / 3;
+  background-color: rgba(100, 201, 155, 0.2);
+  line-height: 1.6em;
+  padding: 8px 32px;
+  text-align: center;
+  font-size: 12px;
+  height: 54px;
+}
+.tainanS1Txt04 span {
+  font-weight: bold;
+}
+
+/*セクション2*/
+.section2 {
+  text-align: center;
+}
+
+
+.main .section2 > h2 {
+    display: flex;
+    background-image: url(../images/frame.png);
+    background-position: center;  /* 背景画像を中央左寄せ */
+    background-repeat: no-repeat;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;  /* テキストは中央寄せ */
+    align-items: center;
+    height: 40px;
+    width: 220px;
+    margin: 20px auto 60px;
+    padding-bottom: 8px;
+}
+
+.section2 > .s2Con > div > .border {
+    display: block;
+    width: 223px;
+    border-top: 1px #000 solid;
+    margin: 20px auto 12px;
+}
+.section2 > .s2Con > div > p {
+  width: 223px;
+  line-height: 1.5em;
+  font-size: 12px;
+  text-align: left;
+}
+
+.borderS2Con01 {
+    display: block;
+    width: 223px;
+    border-top: 1px #000 solid;
+    margin: 0 auto;
+}
+
+.section2 .s2Con > div {
+  width: 223px;
+  margin: 0 auto 48px;         /* 左右中央寄せ */
+}
+
+
+
+/*グリッドレイアウト(s2Gr01)*/
+.s2Gr01 {
+  display: grid;
+  grid-template-columns: 335px;
+  grid-template-rows: 319px 319px 319px 319px;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.s2Gr01 img {
+  width: auto;   /* 元の画像サイズのまま */
+  height: auto;
+  max-width: none;
+}
+
+
+.tainanS2Con01 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+.tainanS2Con02 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+.tainanS2Con03 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+.tainanS2Con04 {
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+}
+
+.s2Link01, .s2Link02, .s2Link03, .s2Link04 {
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-align: right;
+  margin-right: 56px;
+}
+
+h4 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+h4 span {
+    font-size: 16px;
+    display: block;
+}
+
+.s2Text {
+  line-height: 1.5em;
+  margin: 8px auto;
+  font-size: 12px;
+  text-align: left;
+  text-align: justify;
+}
+
+.s2Text.w223 {
+  width: 223px;
+}
+
+.s2Text.w219 {
+  width: 219px;
+}
+
+.s2Con {
+  width: 335px;         /* コンテンツ幅を指定 */
+  margin: 0;        /* 中央寄せ */
+  box-sizing: border-box;
+}
+
+/* モバイル用モーダル */
+/* モーダル本体 */
+  .modalContent {
+    width: 375px;
+    height: 375px;
+  }
+
+  /* 画像本体 */
+  .modalContent img#modalImage {
+    width: 283px;
+    height: 283px;
+  }
+
+  /* 閉じるボタン（右上固定） */
+  .modalContent .close {
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+  }
+
+/*セクション3*/
+.main .section3 >.s3Con > h2 {
+    display: flex;
+    background-image: url(../images/frame.png);
+    background-position: center;  /* 背景画像を中央左寄せ */
+    background-repeat: no-repeat;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;  /* テキストは中央寄せ */
+    align-items: center;
+    height: 40px;
+    width: 220px;
+    margin: 20px auto 60px;
+    padding-bottom: 8px;
+}
+.section3 > .s3Con > div > .border {
+    display: block;
+    width: 223px;
+    border-top: 1px #000 solid;
+    margin: 12px auto;
+}
+
+.section3 > .s3Con > div > p {
+  width: 223px;
+  margin: 0 auto 40px;
+  line-height: 1.5em;
+  font-size: 12px;
+}
+
+
+.section3 .s3Con > div > h4 {
+  font-size: 36px;
+  margin: 0 0 20px 44px;
+}
+
+.s3Text {
+  margin-left: 0;
+}
+
+
+/*グリッドレイアウト(s3Gr01)*/
+.s3Gr01 {
+  display: grid;
+  grid-template-rows: 132px 115px;
+  grid-template-columns: 223px;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0 auto 20px;
+  width: 223px;
+}
+
+.s3Gr01 img {
+  width: auto;   /* 元の画像サイズのまま */
+  height: auto;
+  max-width: none;
+}
+
+.tainanS3Img01 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+.tainanS3Txt01 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  line-height: 1.5em;
+  padding: 0;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+/*s3Gr02の設定*/
+
+.s3Gr02 {
+  display: flex;
+  width: 335px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.s3Gr02 > li {
+  display: inline;
+  
+}
+.tainanS3Txt02 {
+  margin: 20px auto;
+  font-size: 12px;
+  width: 223px;
+  height: 38px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/*グリッドレイアウト(s3Gr03)*/
+.s3Gr03 {
+  display: grid;
+  grid-template-rows: 122px 58px 122px;
+  grid-template-columns: 223px;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0 auto 40px;
+  width: 223px;
+}
+
+.s3Gr03 img {
+  width: auto;   /* 元の画像サイズのまま */
+  height: auto;
+  max-width: none;
+}
+
+.tainanS3Img04 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: flex;           /* フレックスで配置制御 */
+  justify-content: center; /* 水平方向中央揃え */
+}
+.tainanS3Txt03 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  line-height: 1.5em;
+  font-size: 12px;
+}
+.tainanS3Img05 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  display: flex;           /* フレックスで配置制御 */
+  justify-content: center; /* 水平方向中央揃え */
+}
+
+.s3Con > .border {
+  display: block;
+    width: 223px;
+    border-top: 1px #000 solid;
+    margin: 40px auto;
+}
+
+.s3Con {
+  width: 335px;         /* コンテンツ幅を指定 */
+  margin: 0 auto;        /* 中央寄せ */
+  box-sizing: border-box;
+}
+
+.section3 .s3Con > div > h4 {
+  font-size: 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+}
