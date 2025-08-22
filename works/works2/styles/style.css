@@ -1,0 +1,958 @@
+@charset "UTF-8";
+body {
+    font-family: 'Noto sans JP';
+    font-size: 16px;
+}
+.wrap {
+    width: 1366px;
+    margin: 0 auto;
+}
+header {
+    width: 1318px;
+    margin: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.gMenu {
+    display: none;
+}
+header .manu ul {
+    display: flex;
+    width: 629px;
+    justify-content: space-between;
+    height: 16px;
+    margin: 8px;
+    font-family: 'Noto serif JP';
+}
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    height: 62px;
+    padding: 24px;
+}
+h2 {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Noto Serif JP';
+    letter-spacing: .1em;
+}
+h3{
+    margin-top: 16px;
+    font-family: 'Noto Serif JP';
+    text-align: center;
+}
+.egao {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+.egaoSetu {
+    margin: 24px 215px 0px;
+    font-family: 'Noto Serif JP';
+}
+.serSec ul {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+.gazou {
+    height: 211px;
+    width: 300px;
+}
+
+.serSec {
+    width: 1020px;
+    height: 473px;
+    margin: 160px 173px;
+}
+.floSec {
+    height: 498px;
+    padding-top: 48px;
+    margin-top: 100px;
+    margin-bottom: 160px;
+    background-color: #F4F5F7;
+}
+.list {
+    width: 920px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+.tuika {
+    display: inline-block;
+    text-align: center;
+}
+.sekou {
+    border: 3px solid #333333;
+    border-radius: 60px;
+    color: #ffffff;
+    background-color: #333333;
+    width: 60px;
+    height: 280px;
+    font-size: 28px;
+    align-items: center;
+    display: flex;
+    
+}
+.triangle {
+    margin-top: 105px;
+    margin-left: 40px;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 35px solid #B71B26;
+}
+.tri1 {
+    opacity: 60%;
+}
+.tri2 {
+    opacity: 70%;
+}
+.tri3 {
+    opacity: 80%;
+}
+.tri4 {
+    opacity: 90%;
+}
+.red {
+    color: #B71B26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+.red::before, .red::after {
+    color: #B71B26;
+    border-top: 1px solid;
+    content: "";
+    width: 4em;
+}
+.red::before {
+    margin-right: 0.5em;
+}
+.red::after {
+    margin-left: 0.5em;
+}
+.blue {
+    color: #223E69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+.blue::before, .blue::after {
+    color: #223E69;
+    border-top: 1px solid;
+    content: "";
+    width: 4em;
+}
+.blue ::before {
+    margin-right: 0.5em;
+}
+.blue::after {
+    margin-left: 0.5em;
+}
+
+
+
+.black {
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+.black::before, .black::after {
+    color: #333333;
+    border-top: 1px solid;
+    content: "";
+    width: 4em;
+}
+.black ::before {
+    margin-right: 0.5em;
+}
+.black::after {
+    margin-left: 0.5em;
+}
+.conSec {
+    margin-top: 160px;
+}
+.serTit {
+    font-size: 24px;
+    font-family: 'Noto serif JP';
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    letter-spacing: .1em;
+}
+.serSet {
+    font-family: 'Noto serif JP';
+    letter-spacing: .1em;
+}
+.serMore {
+    text-align: right;
+    margin-top: 16px;
+    letter-spacing: .1em;
+}
+.q {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #333333;
+    font-size: 34px;
+    text-align: center;
+    color: #ffffff;
+}
+.a {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #B71B26;
+    font-size: 34px;
+    text-align: center;
+    color: #ffffff;
+}
+.q1 {
+    display: flex;
+    margin-top: 48px;
+}
+.a1 {
+    display: flex;
+    margin-top: 16px;
+}
+.q2 {
+    display: flex;
+    margin-top: 48px;
+}
+.a2 {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 160px;
+}
+.qaSec {
+    margin: 0 173px;
+}
+spanA {
+    margin-top: 13px;
+    margin-left: 10px;
+    font-size: 20px;
+    letter-spacing: .1em;
+}
+spanB {
+    letter-spacing: .1em;
+    width: 920px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.tactSec {
+    background-color: #DEE2E9;
+    height: 1300px;
+    margin-bottom: 217px;
+    padding-top: 48px;
+}
+form {
+    height: 1020px;
+    width: 1000px;
+    background-color: #EFF1FE;
+    margin: 0 auto 0px;
+    font-size: 20px;
+    padding: 48px auto;
+    display: inline-block;
+    margin-top: 47px;
+}
+.iti {
+    display: flex;
+    width: 498px;
+    height: 24px;
+    margin-left: 80px;
+    margin-top: 48px;
+}
+.otoiawasesyubetu {
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+#ni {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 190px;
+}
+.onamae {
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input.user_name {
+    height: 52px;
+    width: 332px;
+}
+#san {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 168px;
+}
+.hurigana {
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+}
+#yon {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 168px;
+}
+.dennwabanngou {
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input.number {
+    height: 52px;
+    width: 332px;
+}
+#go {
+    display: flex;
+    padding-left: 212px;
+    padding-top: 24px;
+}
+.zyuusyo{
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.yuubinn {
+    font-size: 20px;
+    margin-top: 15px;
+}
+input.zyuusyo1 {
+    width: 222px;
+    height: 52px;
+}
+input.zyuusyo2 {
+    width: 650px;
+    height: 52px;
+    margin-top: 24px;
+    margin-left: 315px;
+}
+.aaa {
+    display: flex;
+}
+.bbb {
+    display: flex;
+}
+#roku {
+    display: flex;
+    padding-left: 100px;
+    padding-top: 24px;
+}
+.meado {
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input.email {
+    width: 648px;
+    height: 52px;
+}
+#nana {
+    display: flex;
+    padding-left: 16px;
+    padding-top: 24px;
+}
+.meado2 {
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input.email2 {
+    width: 648px;
+    height: 52px;
+}
+#hati {
+    display: flex;
+    padding-left: 80px;
+    padding-top: 24px;
+}
+.otoiawasenaiyou {
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+textarea {
+    background-color: #ffffff;
+    margin-left: 76px;
+    width: 650px;
+    height: 208px;
+}
+#kyuu {
+    width: 300px;
+    height: 68px;
+    background-color: #333333;
+    color: #ffffff;
+    margin: auto;
+    margin-top: 56px;
+}
+.hissu {
+        border: 1px solid #B71B26;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #B71B26;
+    height: 24px;
+    width: 58px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 16px;
+}
+.hissux {
+    border: 1px solid #B71B26;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #B71B26;
+    height: 24px;
+    width: 58px;
+    text-align: center;
+    font-size: 16px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    background-color: #ffffff;
+}
+.fooorm {
+    text-align: center;
+}
+input[type="submit"] {
+    font-size: 20px;
+    margin-top: 24px;
+}
+.pagetop-btn {
+  width: 60px;
+  height: 60px;
+  background: #333333;
+  position: fixed;
+  right: 50px;
+  bottom: 80px;
+  transition: .8s; 
+}
+.pagetop-btn:hover {
+  opacity: .8;
+}
+.pagetop-btn::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-right: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  z-index: 1;
+  transform: rotate(-45deg)
+}
+.tops {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    h2, .wrap, footer h1, header nav ul li, header, .serSec, .floSec, .tactSec form {
+        width: 100%;
+        padding: 0px;
+    }
+    main img {
+        width: 100%;
+    }
+    header img {
+        width: 240px;
+        height: 19.7px;
+        padding-left: 16px;
+    }  
+    .gMenu {
+        display: block;
+    }
+    .manu {
+        display: none;
+    }
+    .serSec ul {
+        display: block;
+    }
+    .serSec {
+        margin: 0px;
+        height: 1207px;
+    }
+    .list {
+        display: block;
+        width: 375px;
+    }
+    header nav .gMenu {
+        display: inline-block;
+    }
+    header {
+        margin-left: 0px;
+        width: 320px;
+    }
+    .top {
+        display: none;
+    }
+    .tops {
+        display: inline-block;
+    }
+    h2 {
+        font-size: 28px;
+        padding-top: 16px;
+    }
+    .red {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .conSec {
+        margin-top: 48px;
+    }
+    .egao {
+        margin-top: 24px;
+        font-size: 20px;
+    }
+    .egaoSetu {
+        margin: 0px 12px;
+        font-size: 14px;
+        letter-spacing: .1em;
+        line-height: 28px;
+    }
+    .serSec {
+        margin-top: 80px;
+        margin-bottom: 160px;
+    }
+    .serSec ul li img {
+        height: 246px;
+        width: 351px;
+        margin: 0 12px;
+    }
+    h1 img {
+        width: 240px;
+        margin: 0px;
+    }
+    .iti, #ni, #san, #yon, #go, #roku, #nana, #hati, #kyuu {
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
+    .pagetop-btn {
+        left: 300px;
+    }
+    .serSec ul {
+    margin-top: 24px;
+}
+li {
+    width: 375px;
+}
+spanS {
+    font-size: 9px;
+    margin-right: 12px;
+}
+.serSet {
+    margin-top: 8px;
+    width: 351px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.serTit {
+    margin-bottom: 8px;
+}
+.serMore {
+    margin-top: 8px;
+    margin-bottom: 48px;
+}
+.sekou {
+    border: 3px solid #333333;
+    border-radius: 60px;
+    color: #ffffff;
+    background-color: #333333;
+    width: 300px;
+    height: 32px;
+    font-size: 16px;
+    margin-left: 37px;
+    display: flex;
+}
+.tuika {
+    margin: auto;
+}
+.list {
+    margin-top: 16px;
+}
+.triangle {
+    position: relative;
+    top: 8px;
+    margin: 0px;
+    width: 0;
+    height: 0;
+    border-top: 16px solid #B71B26;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid transparent;
+    margin-left: 171.5px;
+}
+.floSec {
+    height: 456px;
+    padding-bottom: 16px;
+    margin-bottom: 80px;
+}
+.qaSec {
+    margin: 0px 0px;
+    margin-top: 0px;
+    height: 501px;
+}
+.q {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    margin-left: 12px;
+    padding-top: 4px;
+}
+.a {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    margin-left: 12px;
+    padding-top: 4px;
+}
+spanA {
+    margin-top: 5px;
+    font-size: 16px;
+    width: 308px;
+}
+spanB {
+    margin-top: 5px;
+    font-size: 16px;
+    width: 308px;
+}
+.tactSec {
+    padding-top: 0px;
+    background-color: #DEE2E9;
+    height: 912px;
+}
+.iti, #ni, #san, #yon, #go, #roku, #nana, #hati, #kyuu {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+form {
+    background-color: #DEE2E9;
+    height: 824px;
+}
+.iti {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 200px;
+    font-size: 14px;
+    margin-left: 100px;
+}
+.otoiawasesyubetu {
+    letter-spacing: .1em;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#ni {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    justify-content: center;
+}
+.onamae {
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+input.user_name {
+    height: 30px;
+    width: 351px;
+    margin-top: 8px;
+}
+#san {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    justify-content: center;
+}
+.hurigana {
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+#yon {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    justify-content: center;
+}
+.dennwabanngou {
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+input.number {
+    height: 30px;
+    width: 351px;
+    margin-top: 8px;
+}
+#go {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    justify-content: center;
+    display: inline-block;
+}
+.zyuusyo{
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+input.zyuusyo1 {
+    width: 125px;
+    height: 30px;
+    margin-top: 8px;
+}
+input.zyuusyo2 {
+    width: 351px;
+    height: 30px;
+    margin-top: 8px;
+    margin-left: 0px;
+}
+.yuubinn {
+    margin-top: 10px;
+}
+#go span {
+    display: inline-block;
+}
+.aaa {
+    margin-left: 140px;
+}
+.bbb {
+    margin-right: 215px;
+}
+#roku {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    justify-content: center;
+}
+.meado {
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+input.email {
+    width: 351px;
+    height: 30px;
+    margin-top: 8px;
+}
+#nana {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    justify-content: center;
+}
+.meado2 {
+    letter-spacing: .1em;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+input.email2 {
+    width: 351px;
+    height: 30px;
+    margin-top: 8px;
+}
+#hati {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    justify-content: center;
+    margin-top: 24px;
+}
+.otoiawasenaiyou {
+    letter-spacing: .1em;
+    font-weight: bold;
+    font-size: 16px;
+}
+textarea {
+    background-color: #ffffff;
+    margin-left: 0px;
+    width: 351px;
+    height: 120px;
+    margin-top: 8px;
+}
+#kyuu {
+    width: 200px;
+    height: 48px;
+    background-color: #333333;
+    color: #ffffff;
+    margin: auto;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.hissu {
+        border: 1px solid #B71B26;
+    border-radius: 60px;
+    color: #ffffff;
+    background-color: #B71B26;
+    height: 18px;
+    width: 40px;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 17px;
+    padding-top: 1px;
+}
+.hissux {
+    border: 1px solid #B71B26;
+    border-radius: 60px;
+    color: #ffffff;
+    background-color: #B71B26;
+    height: 18px;
+    width: 40px;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 1px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    background-color: #ffffff;
+}
+input[type="submit"] {
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* メニューを画面上部に固定表示しています */
+.gMenu {
+  position: fixed;
+  top: 0px;
+  width: 375px;
+  z-index: 99;
+}
+/* メニューアイコンを画面右上に固定しています */
+.gMenu .menu-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  padding-top: 16px;
+  height: 12px;
+}
+/* メニューアイコン（三本線）の真ん中の線です */
+.gMenu .menu-icon .navicon {
+  background: #B71B26; /* 色は自由に変更可能です */
+  display: block;
+  height: 2px; /* 太さ */
+  width: 31px; /* 長さ */
+  position: relative;
+  transition: background .4s ease-out; /* 形が変わる時のアニメーション */
+}
+/* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+.gMenu .menu-icon .navicon::before,
+.gMenu .menu-icon .navicon::after {
+  background: #B71B26; /* 色は自由に変更可能です */
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .4s ease-out; /* 形が変わる時のアニメーション */
+  width: 100%;
+}
+.gMenu .menu-icon .navicon::before {top: 10px;} /* 位置を上にずらしています */
+.gMenu .menu-icon .navicon::after {top: -10px;} /* 位置を下にずらしています */
+/* 表示されるメニューです */
+.gMenu .menu {
+  background-color: rgba(255,255,255,0.9);
+  overflow: hidden;
+  max-height: 0; /* ★最初は高さを0にして非表示状態に */
+  transition: max-height .6s; /* 表示されるときのアニメーション */
+  text-align: center;
+}
+/* メニュー部分のデザインです */
+.gMenu .menu li:first-of-type {
+  padding-top: 50px;
+}
+.gMenu .menu li:last-of-type {
+  padding-bottom: 165px;
+}
+.gMenu .menu li a {
+  display: block;
+  padding: 24px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.gMenu .menu li a:hover {
+  background-color: #f4f4f4;
+}
+/* チェックボックスは常に非表示です */
+.gMenu .menu-btn {
+  display: none;
+}
+/* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+.gMenu .menu-btn:checked ~ .menu {
+  max-height: 600px; /* ★チェックボックスがオンの時高さを338pxにして表示させます */
+  transition: max-height .6s;
+}
+/* メニューボタンの中央の線を非表示に */
+.gMenu .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+
+/* メニューボタンの上下の線を45度傾けて✕印を作ります */
+.gMenu .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+.gMenu .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+}
