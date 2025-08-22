@@ -1,0 +1,753 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Zen Kaku Gothic New',sans-serif;
+    background-color: #F4F4F4;
+}
+ /*ヘッダー*/
+header {
+    background-image: url(../images/hedderBack.png);
+    background-size: cover;
+    background-position: center;
+    height: 768px;
+    color: #FFF;
+}
+.logoHeader {
+    position: absolute;
+    width: 780px;
+    max-width: 88%;
+    top: 174px;
+    left: 11.67%;
+}
+
+/* ヘッダー共通部分 */
+.headerWrap{
+  position: relative;
+  max-width: 100%;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.carousel{
+    width: 1366px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    user-select: none; /* ドラッグ時のテキスト選択防止 */
+    cursor: grab;
+}
+.carousel-inner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 471px;
+    justify-content: center;
+}
+.carousel-item {
+    margin-right: 80px;
+    height: 471px;
+    width: 295px;
+    top: 0;
+    left: 0;
+}
+.carousel-item:last-child {
+    margin-right: 0;
+}
+.carousel img {
+    user-select: none;
+    pointer-events: none;
+}
+.carousel.dragging {
+    cursor: grabbing;
+    transition: none;
+}
+.carousel-item img {
+    width: 297px;
+    object-fit: cover;
+}
+
+.slider{
+    display: flex;
+    max-width: 100%;
+    width: 638px;
+    max-width: 100%;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.sliderCircle{
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: #777575;
+    border-radius: 50%;
+    margin: auto 0;
+    cursor: pointer;
+}
+#slideLeft,
+#slideRight{
+    cursor: pointer;
+    display: inline-block;
+}
+.slideInner{
+    display: flex;
+    position: absolute;
+    width: 2545px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+}
+.slideInner img{
+    display: inline-block;
+    width: 295px;
+}
+
+.intSec {
+    margin: 0 auto;
+}
+.intSecUp {
+    width: 1200px;
+    /* height: 458px; */
+    background-size: cover;
+    margin: 0 auto;
+}
+.intSecDown {
+    width: 1200px;
+    /* height: 458px; */
+    background-size: cover;
+    margin: 0 auto;
+}
+.intSecUp,.intSecDown{
+    display: flex;
+    max-width: 100%;
+    padding: 80px 20px;
+    justify-content: space-between;
+}
+.intSecUpBG{
+    background-image: url(../images/formosaBackA.png);
+    background-size: cover;
+}
+.intSecDownBG{
+    background-image: url(../images/formosaBackB.png);
+    background-size: cover;
+}
+.intSecLeft{
+    flex-basis: 31.12%;
+}
+.intSecA, .intSecB {
+    display: flex;
+    max-width: 100%;
+    width: 636px;
+    height: 298px;
+    align-items: center;
+    object-fit: cover;
+}
+.img{
+    flex-basis: 53%;
+    display: flex;
+    align-items: center;
+}
+.logoTaiwan {
+    /* margin-top: 80px;
+    margin-left: 283px; */
+    /* position: absolute; */
+    width: 104px;
+    text-align: center;
+    margin-left: 180px;
+    margin-bottom: 100px;
+}
+.logoTaiwan img{
+    max-width: 100%;
+}
+.formosa {
+    font-size: 48px;
+    line-height: 1em;
+    margin-bottom: 20px;
+    /* margin-top: 258px;
+    margin-left: 103px; */
+}
+.formosa2 {
+    font-size: 32px;
+    line-height: 1em;
+    padding-bottom: 20px;
+    /* margin-top: 326px;
+    margin-left: 103px; */
+    border-bottom: #000 1px solid;
+}
+.formosa3 {
+    font-size: 20px;
+    line-height: 1.5em;
+    width: 420px;
+    height: 280px;
+    /* margin-top: 140px;
+    margin-left: 103px; */
+    /* position: absolute; */
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    line-height: 1.6em;
+    display: flex;
+    align-items: center;
+}
+.galSec {
+    /* height: 947px; */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 1366px;
+    max-width: 100%;
+    margin: 0 auto 40px;
+}
+.gallery {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    background-image: url(../images/h2Back.png);
+    background-size: cover;
+    width: 530px;
+    height: 96px;
+    background-position: center;
+    padding-top: 24px;
+    margin-bottom: 160px;
+
+}
+.gallery span {
+    font-size: 24px;
+    margin-left: 16px;
+}
+.image_box {
+    display: flex;
+    width: 2545px;
+    justify-content: space-between;
+    position: absolute;
+    left: -589.5px;
+}
+.toolbar {
+    margin-top: 687px;
+    display: flex;
+    margin-left: 369px;
+}
+.galCli2 {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #777575;
+    background-color: #777575;
+    border-radius: 28px;
+    margin-top: 18px;
+    margin-left: 60px;
+}
+.galCli3 {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    border-radius: 28px;
+    margin-top: 18px;
+    margin-left: 60px;
+}
+.next {
+    margin-left: 60px;
+}
+.traSec {
+    max-width: 100%;
+    /* height: 1007px; */
+    width: 1200px;
+    margin: 20px auto 80px;
+}
+.travel {
+    font-size: 48px;
+    margin: 0 20px 120px auto;
+    background-repeat: no-repeat;
+    background-image: url(../images/pcMidashiBg.png);
+    background-size: cover;
+    width: 530px;
+    height: 96px;
+    background-position: center;
+    text-align: center;
+    padding-top: 20px;
+}
+.travel span {
+    font-size: 24px;
+    margin-left: 16px;
+}
+.travel2 {
+    display: flex;
+    height: 611px;
+    justify-content: space-between;
+    margin: 0 80px;
+    align-items: center;
+}
+.travel3 {
+    flex-basis: 40.4%;
+    /* width: 420px; */
+    display: flex;
+    align-items: center;
+    height: 248px;
+    font-size: 20px;
+    line-height: 1.6em;
+    text-align: justify;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    /* padding-top: 60px; */
+}
+.map1 {
+    align-self: flex-start;
+    /* flex-basis: 30%; */
+    width: 400px;
+    height: 508px;
+    /* margin-right: 96px;
+    margin-left: 80px;
+    margin-bottom: 104px; */
+    /* margin-top: 236px;
+    margin-left: 882px; */
+    position: relative;
+}
+.map5{
+    position: absolute;
+    left: 80px;
+    max-width: 100%;
+}
+.map2 {
+    width: 99px;
+    height: 209px;
+    /* margin-top: 297px;
+    margin-left: 1090px; */
+    top: 61px;
+    right: 0;
+    position: absolute;
+    background-image: url(../images/taipei.png);
+    background-size: contain;
+}
+.map3 {
+    width: 99px;
+    height: 209px;
+    /* margin-top: 316px;
+    margin-left: 813px; */
+    top: 90px;
+    left: 0;
+    position: absolute;
+    background-image: url(../images/taityun.png);
+    background-size: contain;
+}
+.map4 {
+    width: 99px;
+    height: 209px;
+    /* margin-top: 590px;
+    margin-left: 880px; */
+    top: 402px;
+    left: 64px;
+    position: absolute;
+    background-image: url(../images/tainan.png);
+    background-size: contain;
+}
+.traBorder {
+    border-top: 1px solid #000000;
+    width: 480px;
+    margin: 80px auto 0;
+}
+.eveSec{
+    /* height: 1419px; */
+    width: 1200px;
+    max-width: 100%;
+    margin: 20px auto 80px;
+}
+.event {
+    font-size: 48px;
+    /* margin-top: 20px; */
+    /* margin-left: 103px; */
+    background-repeat: no-repeat;
+    background-image: url(../images/pcMidashiBg.png);
+    background-size: cover;
+    width: 530px;
+    height: 96px;
+    background-position: center;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 120px;
+}
+.event span {
+    font-size: 24px;
+    margin-left: 16px;
+}
+.festival,.party{
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+.fes {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.fes2 {
+    display: flex;
+}
+.fes3, .par3 {
+    flex-basis: 50%;
+    max-width: 580px;
+    /* margin-top: 40px; */
+    /* margin-left: 103px */
+}
+.fes3 img,.par3 img{
+    max-width: 100%;
+}
+.fes4, .par4{
+    flex-basis: 50%;
+}
+.fes5,.par5{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    line-height: 1em;
+}
+.fes6,.par6{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 1em;
+}
+.fes7,.par7{
+    font-size: 20px;
+    width: 314px;
+    padding: 32px 0;
+    text-align: justify;
+    line-height: 1.6em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+}
+.party{
+    margin-bottom: 0;
+}
+.par1 {
+    font-size: 36px;
+    /* margin-top: 80px; */
+    /* margin-left: 103px; */
+    line-height: 1.6em;
+}
+.par8 {
+    display: flex;
+}
+.par9 {
+    margin-bottom: 40px;
+}
+.infSec{
+    padding: 80px;
+}
+.infBorder {
+    border: 1px solid #000000;
+    /* height: 560px; */
+    width: 1040px;
+    max-width: 100%;
+    margin: 0 auto;
+    /* box-sizing: content-box; */
+    padding: 40px 40px 80px;
+}
+.inf1{
+    font-size: 40px;
+    /* margin-top: 40px; */
+    text-align: center;
+    line-height: 1em;
+}
+.inf2 {
+    margin-top: 80px;
+    /* width: 450px; */
+    flex-basis: 47.07%;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+.inf3 {
+    /* width: 450px; */
+    margin-top: 80px;
+    flex-basis: 47.07%;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+.inf4{
+    display: flex;
+    justify-content: space-between;
+}
+.inf5 {
+    display: flex;
+}
+.inf6 {
+    display: flex;
+}
+.inf7 {
+    display: flex;
+}
+.inf8 {
+    text-align: justify;
+}
+.republic {
+    margin-left: 20px;
+}
+strong{
+    font-weight: 400;
+}
+
+
+
+.inf2 ul li::before, .inf3 ul li::before {
+    content: "■";
+    /* border: 1px solid #000000;
+    width: 10px;
+    height: 10px;
+    background-color: #000000; */
+    display: inline-block;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+header{
+    background-image: url(../images/hedderBackSP.png);
+    height: 667px;
+}
+header nav{
+    position: relative;
+    height: 600px;
+}
+header nav .sns{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.topLogo{
+    display: none;
+}
+.logoHeader{
+    position: static;
+    max-width: 100%;
+    margin-top: 200px;
+}
+#slideLeft,
+#slideRight{
+display: none;
+}
+.slider{
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 250px;
+}
+.sliderCircle{
+    width: 18px;
+    height: 18px;
+}
+.carousel-item {
+    margin-right: 20px;
+}
+.intSecUp,.intSecDown{
+    display: block;
+    padding: 20px 20px 60px;
+}
+.intSecUpBG{
+    background-position-x: 75%;
+}
+.intSecDownBG{
+    background-position-x: 60%;
+}
+.logoTaiwan{
+    width: 32px;
+    margin: 0 auto 40px;
+}
+.formosa,.formosa2{
+    text-align: center;
+}
+.formosa{
+    font-size: 20px;
+}
+.formosa2{
+    font-size: 12px;
+    width: 132px;
+    margin: 0 auto 60px;
+    padding-bottom: 12px;
+}
+.intSecA,.intSecB{
+    height: 139px;
+}
+.intSecUpBG{
+    background-image: url(../images/formosaBackASP.png);
+}
+.intSecDownBG{
+    background-image: url(../images/formosaBackBSP.png);
+}
+.formosa3{
+    font-size: 12px;
+    width: 223px;
+    margin: 0 auto 60px;
+    padding: 12px 0;
+    height: auto;
+}
+.gallery, .travel,
+.event{
+    width: 220px;
+    background-size: contain;
+    font-size: 24px;
+    height: 40px;
+    padding-top:  5px;
+    margin: 0 auto 80px;
+}
+.gallery span,
+.travel span,
+.event span{
+    font-size: 12px;
+    margin-left: 4px;
+}
+.carousel-inner{
+    margin: 0;
+}
+.galSec{
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+.travel{
+    margin-bottom: 60px;
+}
+.travel2{
+    display: block;
+    margin: 0;
+    height: auto;
+}
+.travel3{
+    width: 223px;
+    font-size: 12px;
+    height: auto;
+    padding: 12px 0;
+    margin: 0 auto 60px;
+}
+.map1{
+    margin: 0 auto;
+    width: 255px;
+    height: 406px;
+}
+.map5{
+    left: 37px;
+    width: 180px;
+    height: 355px;
+}
+.map3{
+    top: 82px;
+    width: 59px;
+    height: 126px;
+}
+.map2{
+    top: 55px;
+    width: 59px;
+    height: 126px;
+}
+.map4{
+    top: 280px;
+    left: 52px;
+    width: 59px;
+    height: 126px;
+}
+.traBorder {
+    width: 223px;
+    margin-top: 60px;
+}
+.traSec{
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.fes2,.par8{
+    display: block;
+}
+.fes,.par1{
+    font-size: 20px;
+    text-align: center;
+    line-height: 1em;
+}
+.event{
+    margin-bottom: 60px;
+}
+.fes,.par9{
+    margin-bottom: 20px;
+}
+.fes3,.par3{
+    height: 194px;
+    margin: 0 auto 20px;
+}
+.fes3 img,
+.par3 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.fes5,.par5{
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+.fes6,.par6{
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.fes7,.par7{
+    font-size: 12px;
+    width: 223px;
+    padding: 12px 0;
+}
+.festival{
+    margin-bottom: 40px;
+}
+.par1{
+    line-height: 1.6em;
+}
+.eveSec{
+    margin-bottom: 60px;
+    margin-top: 0;
+    padding-top: 20px;
+}
+.infSec{
+    padding: 20px 20px 0 20px;
+    margin-bottom: 60px;
+}
+.inf4{
+    display: block;
+}
+.inf2,.inf3{
+    font-size: 12px;
+    margin: 0;
+}
+.republic{
+    margin-left: 12px;
+}
+.inf1{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.inf2{
+    margin-bottom: 40px;
+}
+.inf8::before{
+    content: "■";
+    display: inline-block;
+}
+.infBorder{
+    padding: 20px 20px 40px;
+}
+.inf5,.inf6,.inf7{
+    gap: 4px;
+}
+
+
+
+
+
+/* ここまで */
+}

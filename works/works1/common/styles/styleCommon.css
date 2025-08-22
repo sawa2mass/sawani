@@ -1,0 +1,504 @@
+@charset "UTF-8";
+
+/* 全体フォント指定 */
+html {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+/* ヘッダー共通部分 */
+/* 上部ナビゲーションバー */
+.topBar {
+    display: block;
+}
+.topBar ul{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    font-weight: bold;
+}
+.topBar ul li{
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+/* リンク本体 */
+.topBar ul li a {
+    position: relative;             /* 疑似要素の基準 */
+    display: inline-block;          /* テキスト幅に合わせる */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* 上下移動アニメ */
+}
+
+/* 下線の疑似要素 */
+.topBar ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease;
+}
+
+/* ホバー時：下線を伸ばす */
+.topBar ul li a:hover::after {
+    width: 100%;   /* リンク文字と同じ幅 */
+}
+
+/* ホバー時：少し上に移動 */
+.topBar ul li a:hover {
+    transform: translateY(-8px);
+}
+
+
+
+
+
+/* 左側ロゴとSNSアイコン */
+.headerWrap nav{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.headerWrap nav img{
+    width: 133px;
+}
+.sns{
+    display: flex;
+    width: 32px;
+    height: 176px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 438px;
+}
+.snsLogo{
+    width: 32px;
+    height: 32px;
+}
+
+/* ハンバーガーメニュー */
+#hamburger {
+  display: none;
+}
+
+/* ハンバーガーボタン（48×48px丸） */
+.hamburger {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(4, 0, 0, 0.52);
+  cursor: pointer;
+  position: fixed;
+  top: 4px;
+  right: 4px;
+  z-index: 1100;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  overflow: visible;
+  padding: 0; /* 念のため */
+}
+.drawer-border {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* 縦中央 */
+    align-items: center;      /* 横中央 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000000;
+}
+.hamburger span {
+  display: inline-block;
+  height: 2px;
+  background: #fff;
+  margin: 5px 0; /*上下の間隔*/
+  transition: all 0.3s ease;
+  transform-origin: center center;
+}
+
+/* 上・下の線は24px */
+.hamburger span:nth-child(1),
+.hamburger span:nth-child(3) {
+  width: 24px;
+}
+
+/* 真ん中の線だけ32pxにする */
+.hamburger span:nth-child(2) {
+  width: 32px;
+}
+
+/* メニュー（初期は非表示、右からスライドイン） */
+.drawer-menu {
+  position: fixed;
+  top: 0;
+  right: -225px; /* ← 最初は画面外に隠す */
+  width: 225px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* ← 常に色付き */
+  box-shadow: -3px 0 6px rgba(0,0,0,0.2);
+  padding: 60px 20px 20px 20px;
+  transition: right 0.6s ease; /* ← スライド用トランジションのみ */
+  z-index: 1050;
+  overflow-y: auto;
+}
+
+.drawer-menu.active {
+  right: 0; /* ← 表示位置にスライドイン */
+}
+
+
+/* ハンバーガーがactiveのとき、横線を×に変形 */
+.hamburger.active span:nth-child(1) {
+  transform: translate(0, 12px) rotate(45deg) scaleX(1.414);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+
+.hamburger.active span:nth-child(3) {
+  transform: translate(0, -12px) rotate(-45deg) scaleX(1.414);
+}
+/* メニュー内のリンク */
+.drawer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.drawer-menu ul li {
+  margin-bottom: 20px;
+}
+
+.drawer-menu ul li:first-of-type {
+  margin-bottom: 40px;
+}
+
+.drawer-menu ul li a {
+    color: #ffffff;
+    text-decoration: none; /* デフォルトの下線は消す */
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block; /* 下線が全体に引かれるようにする */
+    border-bottom: 1px solid #ffffff; /* 白の下線を追加！ */
+    line-height: 1em;
+    padding-bottom: 1px;
+}
+
+.menu-heading {
+  color: #ffffff;       /* 白文字 */
+  font-size: 24px;      /* 好きなサイズに */
+  line-height: 1em;
+  font-weight: bold;
+  margin-bottom: 60px;  /* 下に余白 */
+  text-align: center;   /* 中央揃え（任意） */
+  margin-top: 80px;
+  background-image: none;
+}
+.hamburger.active {
+  background: #000000; 
+}
+
+.drawer-menu {
+  padding: 0; /* パディングを一旦ゼロに */
+  position: fixed;
+  top: 0;
+  right: -225px;
+  width: 225px;
+  height: 100vh;
+  transition: right 0.4s linear;
+  z-index: 1050;
+
+  overflow-y: auto;
+}
+
+.menu-image {
+  margin-top: 8px;
+  margin-left: 12px;
+  max-width: 101px;
+}
+.drawer-menu ul li:nth-of-type(5) {
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 768px){
+  #hamburger{
+    display: block;
+  }
+}
+
+/*トップへ戻るボタン*/
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  z-index: 500;
+}
+
+.backToTop img {
+  width: 100%;
+}
+
+/* トップへ戻るボタンホバー時半透明に */
+.backToTop:hover img {
+  opacity: 0.5;               /* 透明度50％ */
+  transition: opacity 0.3s;  /* 0.3秒で */
+}
+
+
+/*フッターここから*/
+footer {
+    background-color: #007AB7;
+    color: #FFF;
+    position: relative;
+    padding: 0 84px;
+    text-align: center;
+}
+.flag {
+    width: 64px;
+    height: 48px;
+    margin-top: 40px;
+    margin-bottom: 28px;
+}
+
+
+
+.footerNav {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    height: 312px;
+}
+.footerNav ul {
+    width: 33%;
+    font-size: 20px;
+    height: 292px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.footerNav ul li a {
+    display: inline-block;
+    line-height: 1em;
+}
+.footerNav li{
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    border-bottom: 1px #FFF solid;
+    width: 332px;
+    max-width: 100%;
+}
+.footerNav li:last-of-type{
+    margin-bottom: 0px;
+}   
+
+/* フッターリンクホバーアニメ */
+.footerNav li a {
+  color: #fff; /* 元の色 */
+  transition: transform 0.4s ease;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block; /* transformを効かせるために必要 */
+}
+
+.footerNav li a:hover {
+  transform: translateX(8px); /* 右に8px移動 */
+}
+
+
+
+.footerSns{
+    flex-basis: 33%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: right;
+    width: 136px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+footer .snsLogo:first-of-type{
+    margin-right: 40px;
+}
+footer .snsLogo:last-of-type{
+    margin-left: 40px;
+}
+.footerLogo img{
+    position: inherit;
+    max-width: 100%;
+    width: 256px;
+}
+.footerLogo{
+    display: flex;
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+footer p{
+width: 100%;
+background-color: #007AB7;
+font-size: 10px;
+line-height: 1em;
+padding: 24px 0 20px;
+border-top: 1px #03A9F4 solid;
+margin-top: 4px;
+}
+/* フッターここまで */
+
+/*PC用ロード画面*/
+
+.loading{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #007AB7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11000;
+}
+.loading img{
+    width: 318px;
+    opacity: 0;
+    animation: load 4s ease-in-out 2;
+    animation-delay: 1s;
+}
+
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.33;
+    }
+    50%{
+        opacity: 0.66;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+/*768px以下レスポンシブデザインここから*/
+@media screen and (max-width: 768px) {
+
+/* ヘッダー共通部分(レスポンシブ) */
+/* 上部ナビゲーションバー(非表示) */
+    .topBar {
+        display: none;
+    }
+
+/* 左側ロゴとSNSアイコン(レスポンシブ) */
+    .headerWrap nav{
+        top: 4px;
+        left: 20px;
+    }
+    .headerWrap nav img{
+        width: 111px;
+    }
+    .sns{
+        height: 136px;
+        margin-top: 420px;
+    }
+
+    
+/* トップへ戻るボタン(レスポンシブ) */
+.backToTop {
+    width: 48px;
+    height: 48px;
+    bottom: 5px; 
+    right: 4px;
+  }
+
+
+/*フッター(レスポンシブ)ここから*/
+footer {
+    padding: 0 20px;
+}
+.flag {
+    width: 32px;
+    height: 24px;
+    margin: 20px 0;
+}
+.footerNav {
+    display: block;
+    justify-content: center;
+    padding: 0;
+    height: 246px;
+}
+.footerNav ul {
+    max-width: 100%;
+    width: 195px;
+    height: 167px;
+    margin: 0 auto;
+}
+.footerNav li{
+    padding-bottom: 4px;
+    margin-bottom: 11px;
+    border-bottom: 1px #FFF solid;
+    font-size: 12px;
+}
+
+.footerNav li:last-of-type{
+    margin-bottom: 0;
+}   
+.footerSns{
+    display: flex;
+    position: relative;
+    top: 35px;
+    justify-content: flex-start;
+    width: 143px;
+    margin: 0px auto;
+    padding-bottom: 0;
+}
+.footerLogo img{
+    position: absolute;
+    left: 20px;
+    bottom: 46px;
+    width: 71px;
+}
+.footerLogo{
+    display: flex;
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 0;
+}
+
+footer p{
+width: 100%;
+background-color: #007AB7;
+font-size: 10px;
+line-height: 1em;
+padding: 12px 0;
+border-top: 1px #03A9F4 solid;
+}
+
+footer .snsLogo:first-of-type{
+    margin-right: 20px;
+}
+footer .snsLogo:last-of-type{
+    margin-left: 20px;
+}
+/* フッターここまで */
+
+/*SP用ロード画面*/
+.loading img{
+    width: 76.53%;
+    margin: 0 44px;
+  }
+
+}
